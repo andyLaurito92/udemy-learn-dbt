@@ -1,1 +1,7 @@
-SELECT * FROM "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."CUSTOMER"
+WITH sample_customer as (
+     SELECT * FROM {{ source('sample', 'customer') }}
+)
+
+
+
+SELECT * FROM sample_customer
