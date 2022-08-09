@@ -31,7 +31,7 @@ models:
   - name: snowflake_cumulative_sales
     description: "Amout of sales by date"
     columns:
-      - name: o_orderdate
+      - name: date
         description: "The primary key for this table"
         tests:
           - unique
